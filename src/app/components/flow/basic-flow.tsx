@@ -1,23 +1,17 @@
 "use client";
 import useBasicFlow from "@/app/hooks/use-basic-flow";
 import { nodeTypes } from "@/app/util/initial-nodes";
+import nodeColor from "@/app/util/node-color";
 import {
-  ReactFlow,
-  MiniMap,
   Background,
   BackgroundVariant,
-  SelectionMode,
   Controls,
-  Node,
+  MiniMap,
+  ReactFlow,
   ReactFlowInstance,
+  SelectionMode,
 } from "@xyflow/react";
-import {
-  SyntheticEvent,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { useEffect, useRef } from "react";
 import { defaultEdgeOptions } from "./default-edges-options";
 const panOnDrag = [1, 2];
 const NODE_SIZE = 40;
@@ -106,14 +100,3 @@ const BasicFlow = () => {
 };
 
 export default BasicFlow;
-
-const nodeColor = (node: Node) => {
-  switch (node.type) {
-    case "input":
-      return "#6ede87";
-    case "output":
-      return "#6865A5";
-    default:
-      return "#ff0072";
-  }
-};
