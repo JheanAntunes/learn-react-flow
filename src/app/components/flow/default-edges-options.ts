@@ -11,7 +11,7 @@ export enum ConnectionLineType {
 export const defaultEdgeOptions: DefaultEdgeOptions = {
   type: ConnectionLineType.Bezier,
   animated: true,
-  interactionWidth: 10,
+  interactionWidth: 12,
   labelBgBorderRadius: 4,
   labelBgPadding: [8, 4],
 };
