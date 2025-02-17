@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import { useShallow } from "zustand/react/shallow";
 import { ReactFlow } from "@xyflow/react";
+import { useShallow } from "zustand/react/shallow";
 
 import useStore from "./store";
 import { AppState } from "./type";
