@@ -1,5 +1,7 @@
+import FlowWithZustand from "./components/flow-with-zustand";
 import BasicFlow from "./components/flow/basic-flow";
 import Flow from "./components/flow/custom-node";
+
 import NodeToolbarExample from "./components/flow/NodeToolbarExample";
 import ReactiveFlow from "./components/multiple-edges";
 
@@ -10,7 +12,8 @@ export default function Home() {
       {/* <NodeToolbarExample /> */}
       {/* <BasicFlow /> */}
       {/* <Flow /> */}
-      <ReactiveFlow />
+      {/* <ReactiveFlow /> */}
+      <FlowWithZustand />
     </main>
   );
 }
