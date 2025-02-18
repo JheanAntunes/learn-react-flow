@@ -10,7 +10,7 @@ interface CustomNodeStorageProps {
   localStorageKey: string;
   children: (
     content: string,
-    handleChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   ) => React.ReactNode;
 }
 
