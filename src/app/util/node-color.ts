@@ -6,8 +6,10 @@ const nodeColor = (node: Node) => {
       return "#6ede87";
     case "output":
       return "#6865A5";
-    default:
+    case "processing":
       return "#ff0072";
+    default:
+      return "#f9a825";
   }
 };
 
