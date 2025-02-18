@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Squircle } from "lucide-react";
+import { MessageCircle, Squircle, TextCursorInput } from "lucide-react";
 import FlowWithZustand from "./components/flow-with-zustand";
 import { ModeToggle } from "./components/toggle-theme";
 
@@ -11,6 +11,18 @@ export default function Home() {
           <Button size="icon">
             <Squircle className="h-[1.2rem] w-[1.2rem]" />
             <span className="sr-only">add node</span>
+          </Button>
+        </li>
+        <li>
+          <Button size="icon">
+            <TextCursorInput className="h-[1.2rem] w-[1.2rem]" />
+            <span className="sr-only">add node</span>
+          </Button>
+        </li>
+        <li>
+          <Button size="icon">
+            <MessageCircle className="h-[1.2rem] w-[1.2rem]" />
+            <span className="sr-only">add node processing</span>
           </Button>
         </li>
         <li>
