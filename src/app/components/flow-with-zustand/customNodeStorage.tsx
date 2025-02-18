@@ -20,11 +20,9 @@ const CustomNodeStorage: React.FC<CustomNodeStorageProps> = ({
   localStorageKey,
   children,
 }) => {
-  const [content, setContent] = useState<string>(
-    getNodeContentFromLocalStorage(localStorageKey, id) || initialContent
-  );
+  const [content, setContent] = useState<string>(initialContent);
 
-  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
     setContent(newValue);
     updateLocalStorageNode(localStorageKey, id, newValue);
