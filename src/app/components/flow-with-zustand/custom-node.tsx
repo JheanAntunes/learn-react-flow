@@ -1,3 +1,4 @@
+import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 import CustomNodeStorage from "./customNodeStorage";
 
@@ -19,7 +20,7 @@ const CustomNode: React.FC<CustomNodeProps> = ({ id, data }) => {
     >
       {(content, handleChange) => (
         <div style={{ border: "1px solid black", padding: "10px" }}>
-          <textarea value={content} onChange={handleChange} />
+          <Textarea value={content} onChange={handleChange} />
         </div>
       )}
     </CustomNodeStorage>
