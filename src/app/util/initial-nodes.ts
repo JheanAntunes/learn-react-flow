@@ -11,6 +11,8 @@ export const nodeTypes = {
   custom: NodeCustom,
 };
 
+export type NodeType = keyof typeof nodeTypes;
+
 const initialNodes: Node[] = [
   {
     id: "1",
