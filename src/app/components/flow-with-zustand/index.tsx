@@ -1,4 +1,6 @@
 "use client";
+import { nodeTypes } from "@/app/util/initial-nodes";
+import nodeColor from "@/app/util/node-color";
 import {
   Background,
   BackgroundVariant,
@@ -8,8 +10,6 @@ import {
   SelectionMode,
 } from "@xyflow/react";
 import { useShallow } from "zustand/react/shallow";
-
-import nodeColor from "@/app/util/node-color";
 import { defaultEdgeOptions } from "../flow/default-edges-options";
 import useStore from "./store";
 import { AppState } from "./type";
@@ -28,6 +28,7 @@ function FlowWithZustand() {
   );
   return (
     <ReactFlow
+      nodeTypes={nodeTypes}
       nodes={nodes}
       edges={edges}
       onNodesChange={onNodesChange}
