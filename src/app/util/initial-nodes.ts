@@ -1,8 +1,8 @@
 import { Node } from "@xyflow/react";
-import NodeCustom from "../components/flow-with-zustand/nodes/node-custom";
-import NodeInput from "../components/flow-with-zustand/nodes/node-input";
-import NodeOutput from "../components/flow-with-zustand/nodes/node-output";
-import NodeProcessing from "../components/flow-with-zustand/nodes/node-processing";
+import NodeCustom from "../components/flow/nodes/node-custom";
+import NodeInput from "../components/flow/nodes/node-input";
+import NodeOutput from "../components/flow/nodes/node-output";
+import NodeProcessing from "../components/flow/nodes/node-processing";
 
 export const nodeTypes = {
   input: NodeInput,
