@@ -12,6 +12,8 @@ const AddInputNodeControl = () => {
       type: "input",
       position: { x: Math.random() * 400, y: Math.random() * 400 },
       data: { label: "New Node Input" },
+      height: 44,
+      style: { backgroundColor: "#6ede87", color: "white" },
     } satisfies NewNode);
   };
 
