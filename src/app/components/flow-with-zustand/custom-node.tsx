@@ -21,7 +21,7 @@ const CustomNode: React.FC<CustomNodeProps> = ({ id, data }) => {
       {(content, handleChange) => (
         <div className="w-full h-full relative flex  items-center justify-center">
           <Input
-            className="h-10 border-none bg-transparent text-white"
+            className="h-10 border-none text-center bg-transparent text-white"
             value={content}
             onChange={handleChange}
           />
