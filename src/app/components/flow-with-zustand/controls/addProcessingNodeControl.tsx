@@ -4,7 +4,7 @@ import { generateRandomPosition } from "@/app/util/generate-random-position";
 import { Button } from "@/components/ui/button";
 import { TextCursorInput } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
-import useStore from "../flow-with-zustand/store";
+import useStore from "../store";
 const AddProcessingNodeControl = () => {
   const addNode = useStore((state) => state.addNode);
   const handleClick = () => {

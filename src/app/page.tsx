@@ -1,5 +1,5 @@
-import Menu from "./components/controls/menu";
 import FlowWithZustand from "./components/flow-with-zustand";
+import Menu from "./components/flow-with-zustand/controls/menu";
 
 export default function Home() {
   return (

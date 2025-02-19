@@ -1,4 +1,4 @@
-import { ModeToggle } from "../toggle-theme";
+import { ModeToggle } from "../../toggle-theme";
 
 import AddCustomNodeControl from "./addCustomNodeControl";
 import AddInputNodeControl from "./AddInputNodeControl";
